@@ -54,7 +54,7 @@ Our code relies on various optimization toolboxes to solve the underlying proble
    
 3. GUROBI (not tested, requires license): https://www.gurobi.com/ 
 
-## III Prepare Portfolio Optimization dataset
+## III [Optional] Prepare Portfolio Optimization dataset
 
 This step is **optional** if you're intended to work on Portfolio Optimization problem. Note: this requires downloading "price_data_2004-01-01_2017-01-01_daily.pt" file located at https://github.com/sanketkshah/LODLs/tree/main/data (alternative link to download: https://dl.fbaipublicfiles.com/lancer/price_data_2004-01-01_2017-01-01_daily.pt). Create a folder named `data/` under `utils/`:
 ```
@@ -67,3 +67,8 @@ $ mkdir utils/data/
 2. Run the following command to generate dataset for MINLP task:
     ```
     $ python utils/gen_portfolio_data.py --problem minlp
+
+
+## IV [Optional] Install PyEPO to run DFL baselines
+
+If you would like to run DFL baselines (see DFL/baselines/run_baselines.py), you need to install PyEPO. Please follow the steps at: https://github.com/khalil-research/PyEPO
